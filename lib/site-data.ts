@@ -43,7 +43,7 @@ export const companyInfo = {
     heading1: "H A W A I I ' s",
     heading2: "Watercraft", // This is styled with the logo-text class
     heading3: "C O N N E C T I O N",
-    mainHeading: "Oahu Jet Ski & Kayak Rentals",
+    mainHeading: "North Shore Jet Ski & Kayak Rentals",
     subheading: "Experience Ultimate Freedom and Immersion With Our World Class Team.",
     backgroundImage: "/hero.webp", // Replace with actual image path
     ctaButtons: [
