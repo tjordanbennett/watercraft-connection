@@ -147,7 +147,7 @@ export default function Home() {
               href={servicesContent.additionalService.learnMoreLink}
               className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80 transition-colors"
             >
-              Learn about private charters
+              Contact Us for Private Charters Information
               <svg className="w-4 h-4 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
               </svg>

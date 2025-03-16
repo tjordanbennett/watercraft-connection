@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 // Update imports to include our new PageLayout component
 import { PageLayout } from "@/components/page-layout"
 
@@ -9,9 +10,27 @@ import { faqContent } from "@/lib/site-data"
 export default function FAQPage() {
   return (
     <PageLayout>
-      <div className="container mx-auto px-4 py-12">
-        <h1 className="text-4xl font-bold text-primary mb-8 text-center">{faqContent.heading}</h1>
+      {/* Hero Banner Section */}
+      <div className="relative h-[250px] w-full">
+        {/* Background Image */}
+        <Image
+          src="/hero.webp"
+          alt="FAQ Banner"
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/50" />
+        {/* Content Container */}
+        <div className="relative h-full flex items-center justify-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-white text-center max-w-4xl px-4 mb-0">
+            {faqContent.heading}
+          </h1>
+        </div>
+      </div>
 
+      <div className="container mx-auto px-4 py-12">
         <div className="max-w-3xl mx-auto space-y-8">
           {/* Map through FAQs */}
           {faqContent.faqs.map((faq, index) => (

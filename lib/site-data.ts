@@ -104,7 +104,7 @@ export const companyInfo = {
       tagline: "Also Available",
       description:
         "For special events and family outings, connect with our experienced team to create a custom adventure.",
-      learnMoreLink: "#learn-more-charters",
+      learnMoreLink: "/contact",
     },
   }
   

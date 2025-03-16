@@ -11,9 +11,27 @@ import { PageLayout } from "@/components/page-layout"
 export default function AboutPage() {
   return (
     <PageLayout>
-      <div className="container mx-auto px-4 py-12">
-        <h1 className="text-4xl font-bold text-primary mb-8 text-center">{aboutContent.heading}</h1>
+      {/* Hero Banner Section */}
+      <div className="relative h-[250px] w-full">
+        {/* Background Image */}
+        <Image
+          src="/hero.webp"
+          alt="About Us Banner"
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/50" />
+        {/* Content Container */}
+        <div className="relative h-full flex items-center justify-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-8 text-center max-w-4xl px-4 mb-0">
+            {aboutContent.heading}
+          </h1>
+        </div>
+      </div>
 
+      <div className="container mx-auto px-4 py-12">
         {/* Main Content Section */}
         <div className="max-w-6xl mx-auto mb-16">
           <div className="grid md:grid-cols-2 gap-10 items-center">

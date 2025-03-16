@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram } from "lucide-react"
 import { ContactInfoItem } from "@/components/contact-info-item"
 import { YelpIcon } from "@/components/icons"
@@ -13,9 +14,27 @@ import { PageLayout } from "@/components/page-layout"
 export default function ContactPage() {
   return (
     <PageLayout>
-      <div className="container mx-auto px-4 py-12">
-        <h1 className="text-4xl font-bold text-primary mb-8 text-center">{contactContent.heading}</h1>
+      {/* Hero Banner Section */}
+      <div className="relative h-[250px] w-full">
+        {/* Background Image */}
+        <Image
+          src="/hero.webp"
+          alt="Contact Banner"
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/50" />
+        {/* Content Container */}
+        <div className="relative h-full flex items-center justify-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-white text-center max-w-4xl px-4 mb-0">
+            {contactContent.heading}
+          </h1>
+        </div>
+      </div>
 
+      <div className="container mx-auto px-4 py-12">
         <div className="max-w-5xl mx-auto">
           <div className="mb-12">
             <p className="text-lg text-center text-gray-700 max-w-3xl mx-auto">{contactContent.intro}</p>
