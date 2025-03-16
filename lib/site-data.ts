@@ -41,17 +41,17 @@ export const companyInfo = {
   // Hero Section
   export const heroContent = {
     heading1: "H A W A I I",
-    heading2: "ADVENTURE", // This is styled with the logo-text class
-    heading3: "W A T E R C R A F T",
-    mainHeading: "Oahu Watercraft Rentals & Ocean Adventures",
+    heading2: "Watercraft", // This is styled with the logo-text class
+    heading3: "C O N N E C T I O N",
+    mainHeading: "Oahu Jet Ski & Kayak Rentals",
     subheading: "Experience Ultimate Freedom and Immersion With Our World Class Team.",
-    backgroundImage: "/placeholder.svg?height=800&width=1600", // Replace with actual image path
+    backgroundImage: "/hero.webp", // Replace with actual image path
     ctaButtons: [
-      {
-        text: "LEARN MORE",
-        href: "#services",
-        isPrimary: false,
-      },
+      // {
+      //   text: "LEARN MORE",
+      //   href: "#services",
+      //   isPrimary: false,
+      // },
       {
         text: "BOOK NOW",
         href: "/booking",
