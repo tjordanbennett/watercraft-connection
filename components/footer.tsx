@@ -8,8 +8,9 @@ export function Footer() {
       <div className="container mx-auto px-4 text-center">
         <div className="mb-4">
           <div className="text-center">
-            <div className="logo-text text-secondary text-3xl font-bold mb-1">ADVENTURE</div>
-            <h2 className="text-sm tracking-wider">W A T E R C R A F T</h2>
+            <h2 className="text-sm tracking-wider">H A W A I I</h2>
+            <div className="logo-text text-secondary text-3xl font-bold mb-1">Watercraft</div>
+            <h2 className="text-sm tracking-wider">C O N N E C T I O N</h2>
           </div>
         </div>
         <div className="flex justify-center space-x-4 mb-4">
