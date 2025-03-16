@@ -71,9 +71,9 @@ export const companyInfo = {
       {
         id: "jet-ski",
         title: "Jet Skiing",
-        tagline: "PREMIUM RENTALS",
-        description: "Experience the thrill of riding the waves",
-        image: "/placeholder.svg?height=400&width=600", // Replace with actual image path
+        tagline: "North Shore",
+        description: "Experience the thrill of open ocean",
+        image: "/jet-ski.webp", // Replace with actual image path
         features: [
           { icon: "Clock", text: "45-minute adventure" },
           { icon: "Users", text: "Single or double riders" },
@@ -85,9 +85,9 @@ export const companyInfo = {
       {
         id: "kayak",
         title: "Kayaking",
-        tagline: "SCENIC TOURS",
+        tagline: "North Shore",
         description: "Explore the serene waters of Oahu",
-        image: "/placeholder.svg?height=400&width=600", // Replace with actual image path
+        image: "/kayak-rental-min.webp", // Replace with actual image path
         features: [
           { icon: "Clock", text: "Flexible duration" },
           { icon: "Users", text: "Single and tandem kayaks" },
@@ -118,31 +118,31 @@ export const companyInfo = {
       {
         platform: {
           name: "Yelp",
-          logo: "/placeholder.svg?height=40&width=80", // Replace with actual logo
+          // logo: "/placeholder.svg?height=40&width=80",
         },
         title: "Amazing Jet Ski Experience!",
-        text: '"The crew were super nice and genuinely wanted us to have a great time. I was nervous and they were patient and encouraging! My 16 year old son was also nervous but they took care of us all! We had an amazing time and I totally recommend them! They are fantastic and a must for anyone who loves nature and the ocean!"',
-        author: "Alexis R.",
+        text: '"I had an incredible Jet Ski experience—definitely one of my favorites on the water! The instructors are extremely skilled and make you feel safe and comfortable. This is a family-owned business that’s been around for over 30 years, so you’re in good hands."',
+        author: "Arnold Bahati.",
         rating: 5,
       },
       {
         platform: {
           name: "TripAdvisor",
-          logo: "/placeholder.svg?height=40&width=80", // Replace with actual logo
+          // logo: "/placeholder.svg?height=40&width=80",
         },
         title: "Wow!",
-        text: '"AMAZING experience! Kayaking on the Anahulu River was so peaceful and I could check it all! The crew was chill, funny, and most importantly made me feel safe the entire time. Highly recommended!"',
-        author: "Daisy B.",
+        text: '"Chris was a great instructor and all staff were very nice.  Very flexible and overall awesome experience!"',
+        author: "Ali Elyassi",
         rating: 5,
       },
       {
         platform: {
           name: "Facebook",
-          logo: "/placeholder.svg?height=40&width=80", // Replace with actual logo
+          // logo: "/placeholder.svg?height=40&width=80",
         },
         title: "We Had An Amazing Time",
-        text: '"The instructor was patient with us since it was our first time doing this. We were able to see the beautiful North Shore up close. It was such an exciting experience. We will definitely be doing this again when we go back to Oahu."',
-        author: "Dria Rene",
+        text: '"6 of us and we did one tandem ski and then all kayaks. Very fun for all and Lisa and Chris are really nice people. I highly recommend them!"',
+        author: "Charles Lee",
         rating: 5,
       },
     ],
@@ -321,7 +321,7 @@ export const companyInfo = {
         "At The Watercraft Connection, we believe that everyone should have the opportunity to experience the thrill and freedom of exploring the ocean. Whether you're a first-time rider or an experienced enthusiast, our team is dedicated to ensuring you have the best possible experience.",
         "We are committed to responsible tourism and environmental stewardship. Our operations follow strict guidelines to minimize our impact on the delicate marine ecosystem, and we actively participate in local conservation efforts.",
       ],
-      image: "/placeholder.svg?height=500&width=600", // Replace with actual image
+      image: "/location-min.webp", // Replace with actual image
     },
   
     // Values section
@@ -558,7 +558,7 @@ export const companyInfo = {
   
     // Booking iframe placeholder
     bookingIframe: {
-      heading: "Acuity Scheduling Iframe",
+      heading: "Acuity Scheduling iframe",
       description: "Insert your Acuity Scheduling iframe code here. The iframe will replace this placeholder.",
     },
   }

@@ -179,12 +179,12 @@ export default function Home() {
             {testimonialsContent.testimonials.map((testimonial, index) => (
               <div key={index} className="testimonial-card">
                 <div className="flex justify-center mb-3">
-                  <Image
+                  {/* <Image
                     src={testimonial.platform.logo || "/placeholder.svg"}
                     alt={testimonial.platform.name}
                     width={80}
                     height={40}
-                  />
+                  /> */}
                 </div>
                 <div className="flex justify-center mb-4">
                   {[1, 2, 3, 4, 5].map((star) => (

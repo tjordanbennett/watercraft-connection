@@ -8,7 +8,7 @@ export function Footer() {
       <div className="container mx-auto px-4 text-center">
         <div className="mb-4">
           <div className="text-center">
-            <h2 className="text-sm tracking-wider">H A W A I I ' s</h2>
+            <h2 className="text-sm tracking-wider">H A W A I I &apos; s</h2>
             <div className="logo-text text-secondary text-3xl font-bold mb-1">Watercraft</div>
             <h2 className="text-sm tracking-wider">C O N N E C T I O N</h2>
           </div>

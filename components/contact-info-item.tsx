@@ -14,26 +14,32 @@ export function ContactInfoItem({ value, type, children }: ContactInfoItemProps)
   // For phone numbers, create a tel: link
   if (type === "phone") {
     return (
-      <a href={`tel:${value}`} className="hover:text-primary transition-colors">
-        {children}
-      </a>
+      <span className="inline-block">
+        <a href={`tel:${value}`} className="hover:text-primary transition-colors">
+          {children}
+        </a>
+      </span>
     )
   }
 
   // For email, use CopyToClipboard with Mail icon
   if (type === "email") {
     return (
-      <CopyToClipboard value={value} icon={<Mail className="h-4 w-4" />} label="Email address">
-        {children}
-      </CopyToClipboard>
+      <span className="inline-block">
+        <CopyToClipboard value={value} icon={<Mail className="h-4 w-4" />} label="Email address">
+          {children}
+        </CopyToClipboard>
+      </span>
     )
   }
 
   // For address, use CopyToClipboard with MapPin icon
   return (
-    <CopyToClipboard value={value} icon={<MapPin className="h-4 w-4" />} label="Address">
-      {children}
-    </CopyToClipboard>
+    <span className="inline-block">
+      <CopyToClipboard value={value} icon={<MapPin className="h-4 w-4" />} label="Address">
+        {children}
+      </CopyToClipboard>
+    </span>
   )
 }
 

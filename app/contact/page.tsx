@@ -3,6 +3,7 @@ import Image from "next/image"
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram } from "lucide-react"
 import { ContactInfoItem } from "@/components/contact-info-item"
 import { YelpIcon } from "@/components/icons"
+import { GoogleMap } from "@/components/google-map"
 
 // Import site data
 import { companyInfo, contactContent } from "@/lib/site-data"
@@ -64,11 +65,11 @@ export default function ContactPage() {
                     <Mail className="h-5 w-5 text-primary mr-2" />
                     <h3 className="text-lg font-semibold">{contactContent.sections.email.title}</h3>
                   </div>
-                  <p className="text-gray-700 pl-7">
+                  <div className="text-gray-700 pl-7">
                     <ContactInfoItem value={companyInfo.contact.email} type="email">
                       {contactContent.sections.email.value}
                     </ContactInfoItem>
-                  </p>
+                  </div>
                   <p className="text-sm text-gray-500 pl-7 mt-1">{contactContent.sections.email.note}</p>
                 </div>
 
@@ -77,11 +78,11 @@ export default function ContactPage() {
                     <MapPin className="h-5 w-5 text-primary mr-2" />
                     <h3 className="text-lg font-semibold">{contactContent.sections.location.title}</h3>
                   </div>
-                  <p className="text-gray-700 pl-7">
+                  <div className="text-gray-700 pl-7">
                     <ContactInfoItem value={companyInfo.contact.address} type="address">
                       {contactContent.sections.location.value}
                     </ContactInfoItem>
-                  </p>
+                  </div>
                   <p className="text-sm text-gray-500 pl-7 mt-1">{contactContent.sections.location.note}</p>
                 </div>
 
@@ -135,14 +136,7 @@ export default function ContactPage() {
 
             {/* Google Maps Embed */}
             <div className="h-full min-h-[400px] rounded-lg overflow-hidden shadow-sm">
-              <div className="bg-gray-200 w-full h-full flex items-center justify-center">
-                {/* Replace this div with actual Google Maps embed */}
-                <div className="text-center p-4">
-                  <p className="text-gray-600 mb-2">{contactContent.mapPlaceholder.title}</p>
-                  <p className="text-sm text-gray-500">{contactContent.mapPlaceholder.description}</p>
-                  <p className="text-xs text-gray-400 mt-4">Example: {contactContent.mapPlaceholder.example}</p>
-                </div>
-              </div>
+              <GoogleMap className="w-full h-full" />
             </div>
           </div>
 
