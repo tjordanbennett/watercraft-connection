@@ -164,51 +164,51 @@ export const companyInfo = {
     images: [
       // Replace these placeholder URLs with your actual image URLs
       {
-        src: "/gallery/image1.jpg", // Replace with actual image path
+        src: "/placeholder.svg?height=800&width=1600", // Replace with actual image path
         alt: "Jet ski adventure on North Shore",
       },
       {
-        src: "/gallery/image2.jpg", // Replace with actual image path
+        src: "/placeholder.svg?height=800&width=1600", // Replace with actual image path
         alt: "Kayaking in crystal clear waters",
       },
       {
-        src: "/gallery/image3.jpg", // Replace with actual image path
+        src: "/placeholder.svg?height=800&width=1600", // Replace with actual image path
         alt: "Family enjoying watercraft adventure",
       },
       {
-        src: "/gallery/image4.jpg", // Replace with actual image path
+        src: "/placeholder.svg?height=800&width=1600", // Replace with actual image path
         alt: "Scenic ocean views from jet ski",
       },
       {
-        src: "/gallery/image5.jpg", // Replace with actual image path
+        src: "/placeholder.svg?height=800&width=1600", // Replace with actual image path
         alt: "Instructor demonstrating jet ski operation",
       },
       {
-        src: "/gallery/image6.jpg", // Replace with actual image path
+        src: "/placeholder.svg?height=800&width=1600", // Replace with actual image path
         alt: "Sunset watercraft tour",
       },
       {
-        src: "/gallery/image7.jpg", // Replace with actual image path
+        src: "/placeholder.svg?height=800&width=1600", // Replace with actual image path
         alt: "Group jet ski adventure",
       },
       {
-        src: "/gallery/image8.jpg", // Replace with actual image path
+        src: "/placeholder.svg?height=800&width=1600", // Replace with actual image path
         alt: "Exploring Oahu's coastline",
       },
       {
-        src: "/gallery/image9.jpg", // Replace with actual image path
+        src: "/placeholder.svg?height=800&width=1600", // Replace with actual image path
         alt: "Watercraft adventure with mountain backdrop",
       },
       {
-        src: "/gallery/image10.jpg", // Replace with actual image path
+        src: "/placeholder.svg?height=800&width=1600", // Replace with actual image path
         alt: "Jet ski splashing through waves",
       },
       {
-        src: "/gallery/image11.jpg", // Replace with actual image path
+        src: "/placeholder.svg?height=800&width=1600", // Replace with actual image path
         alt: "Tandem kayaking experience",
       },
       {
-        src: "/gallery/image12.jpg", // Replace with actual image path
+        src: "/placeholder.svg?height=800&width=1600", // Replace with actual image path
         alt: "Aerial view of jet skis on water",
       },
       // If you have fewer than 12 images, you can remove entries
