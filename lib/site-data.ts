@@ -452,8 +452,8 @@ export const companyInfo = {
       text: "We're happy to help! Contact us using the phone or email icons at the top of the page.",
       buttons: [
         {
-          text: "Return Home",
-          href: "/",
+          text: "Contact Us",
+          href: "/contact",
           isPrimary: true,
         },
         {
