@@ -39,7 +39,7 @@ export function MainNav() {
 
           {/* Book Now Button - Desktop only */}
           <div className="flex items-center">
-            <Link href="/booking" className="hidden md:inline-flex btn-secondary text-sm">
+            <Link href="/booking" className="hidden md:inline-flex btn-secondary text-sm hide-mobile">
               BOOK NOW
             </Link>
 

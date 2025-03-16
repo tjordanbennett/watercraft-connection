@@ -50,7 +50,7 @@ export default function Home() {
                   href={button.href}
                   className={`${
                     button.isPrimary ? "bg-secondary text-black" : "bg-white text-primary"
-                  } font-medium py-2.5 px-7 rounded-full hover:bg-opacity-90 transition-all inline-flex items-center text-sm`}
+                  } font-medium py-2.5 px-7 rounded-full hover:bg-opacity-90 transition-all inline-flex items-center text-sm jb-center-align`}
                 >
                   {button.text}
                 </Link>

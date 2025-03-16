@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
-import { Check } from "lucide-react"
+// import { Check } from "lucide-react"
 
 interface CopyToClipboardProps {
   value: string
@@ -69,7 +69,7 @@ export function CopyToClipboard({ value, icon, label, children }: CopyToClipboar
           <div className="flex flex-col">
             <div className="font-semibold text-base mb-1">{notificationContent.title}</div>
             <div className="flex items-center gap-2 text-sm text-gray-600">
-              <Check className="h-4 w-4 text-black bg-black rounded-full p-0.5 text-white" />
+              {/* <Check className="h-4 w-4 text-black bg-black rounded-full p-0.5 text-white" /> */}
               <span>{notificationContent.message}</span>
             </div>
           </div>

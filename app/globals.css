@@ -246,3 +246,15 @@
   }
 }
 
+.hide-mobile {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.jb-center-align {
+  @media screen and (max-width: 639px) {
+    text-align: center !important;
+    display: block !important;
+  }
+}
