@@ -40,7 +40,7 @@ export const companyInfo = {
   
   // Hero Section
   export const heroContent = {
-    heading1: "H A W A I I",
+    heading1: "H A W A I I ' s",
     heading2: "Watercraft", // This is styled with the logo-text class
     heading3: "C O N N E C T I O N",
     mainHeading: "Oahu Jet Ski & Kayak Rentals",
