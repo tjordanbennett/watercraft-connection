@@ -44,8 +44,8 @@ export const companyInfo = {
     heading2: "Watercraft", // This is styled with the logo-text class
     heading3: "C O N N E C T I O N",
     mainHeading: "North Shore Jet Ski & Kayak Rentals",
-    subheading: "Experience Ultimate Freedom and Immersion With Our World Class Team.",
-    backgroundImage: "/hero.webp", // Replace with actual image path
+    subheading: "",
+    backgroundImage: "/hero.jpg", // Replace with actual image path
     ctaButtons: [
       // {
       //   text: "LEARN MORE",
@@ -235,7 +235,7 @@ export const companyInfo = {
         description: "Expert safety provided by our friendly instructors.",
       },
       {
-        icon: "Anchor",
+        icon: "Palm",
         title: "Natural Beauty",
         description: "Experience stunning views. Bring your camera or rent a waterproof bag.",
       },
@@ -254,7 +254,7 @@ export const companyInfo = {
         description: "Our tours have a minimum of 2 and a maximum of 6 patrons.",
       },
       {
-        icon: "Wildlife", // Custom icon
+        icon: "WaveLine", // Custom icon
         title: "Wildlife",
         description: "Encounter sea turtles and other marine creatures during your adventure.",
       },
@@ -264,7 +264,7 @@ export const companyInfo = {
         description: "Located at Haleiwa Small Boat Harbor, minutes from famous beaches.",
       },
       {
-        icon: "Trending", // Custom icon
+        icon: "Lightbulb", // Custom icon
         title: "Be Inspired",
         description: "Discover a deeper understanding of the ocean and its inhabitants.",
       },

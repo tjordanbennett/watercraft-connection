@@ -2,7 +2,8 @@
 
 import { useState, useCallback } from "react"
 import Link from "next/link"
-import { Anchor, Menu, X } from "lucide-react"
+import { Menu, X } from "lucide-react"
+import { WaveLineIcon } from "@/components/icons/WaveLineIcon"
 
 // Import site data
 import { companyInfo } from "@/lib/site-data"
@@ -19,9 +20,10 @@ export function MainNav() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           {/* Logo - always visible */}
-          <Link href="/" className="text-base font-medium flex items-center gap-2">
-            <Anchor className="h-5 w-5" />
+          <Link href="/" className="text-base font-medium flex items-center gap-2 relative group">
+            <WaveLineIcon className="h-6 w-6 text-white" />
             <span>{companyInfo.shortName}</span>
+            <span className="absolute -bottom-1 left-0 w-0 h-[3px] bg-white transition-all duration-300 group-hover:w-full origin-left group-hover:origin-right"></span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -39,7 +41,7 @@ export function MainNav() {
 
           {/* Book Now Button - Desktop only */}
           <div className="flex items-center">
-            <Link href="/booking" className="hidden md:inline-flex btn-secondary text-sm hide-mobile">
+            <Link href="/booking" className="hidden md:inline-flex btn-secondary text-sm">
               BOOK NOW
             </Link>
 
@@ -93,4 +95,3 @@ export function MainNav() {
     </header>
   )
 }
-

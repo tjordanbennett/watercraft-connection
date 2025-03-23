@@ -1,7 +1,19 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Clock, ShieldCheck, Users, Anchor, MapPin } from "lucide-react"
+import {
+  Clock,
+  ShieldCheck,
+  Users,
+  Anchor,
+  MapPin,
+  TreePalmIcon as Palm,
+  CheckCheck,
+  TelescopeIcon as Binoculars,
+  Waves,
+} from "lucide-react"
 import { GalleryWithLightbox } from "@/components/gallery-with-lightbox"
+import { LightbulbIcon } from "@/components/icons/LightbulbIcon"
+import { WaveLineIcon } from "@/components/icons/WaveLineIcon"
 
 // Import site data
 import {
@@ -50,7 +62,7 @@ export default function Home() {
                   href={button.href}
                   className={`${
                     button.isPrimary ? "bg-secondary text-black" : "bg-white text-primary"
-                  } font-medium py-2.5 px-7 rounded-full hover:bg-opacity-90 transition-all inline-flex items-center text-sm jb-center-align`}
+                  } font-medium py-2.5 px-7 rounded-full hover:bg-opacity-90 transition-all inline-flex items-center text-sm`}
                 >
                   {button.text}
                 </Link>
@@ -103,6 +115,24 @@ export default function Home() {
                         case "Anchor":
                           IconComponent = Anchor
                           break
+                        case "Palm":
+                          IconComponent = Palm
+                          break
+                        case "CheckCheck":
+                          IconComponent = CheckCheck
+                          break
+                        case "Binoculars":
+                          IconComponent = Binoculars
+                          break
+                        case "Waves":
+                          IconComponent = Waves
+                          break
+                        case "Lightbulb":
+                          IconComponent = LightbulbIcon
+                          break
+                        case "WaveLine":
+                          IconComponent = WaveLineIcon
+                          break
                         default:
                           IconComponent = Clock
                       }
@@ -116,12 +146,12 @@ export default function Home() {
                     })}
                   </ul>
                   <div className="flex gap-4">
-                    {/* <a
+                    <a
                       href={service.learnMoreLink}
                       className="flex-1 text-center py-2.5 border border-primary text-primary rounded-full text-sm font-medium hover:bg-primary hover:text-white transition-colors"
                     >
                       LEARN MORE
-                    </a> */}
+                    </a>
                     <Link
                       href={service.bookingLink}
                       className="flex-1 text-center py-2.5 bg-secondary text-black rounded-full text-sm font-medium hover:bg-secondary/90 transition-colors"
@@ -147,7 +177,7 @@ export default function Home() {
               href={servicesContent.additionalService.learnMoreLink}
               className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80 transition-colors"
             >
-              Contact Us for Private Charters Information
+              Learn about private charters
               <svg className="w-4 h-4 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -157,8 +187,15 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-blue-gradient text-white" id="about">
-        <div className="container mx-auto px-4 text-center">
+      <section className="py-20 relative" id="about">
+        {/* Background Image */}
+        <div className="absolute inset-0 overflow-hidden">
+          <Image src="/bg_img1.webp" alt="Ocean background" fill className="object-cover" />
+        </div>
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-primary/40"></div>
+        {/* Content */}
+        <div className="container mx-auto px-4 text-center relative z-10 text-white">
           <div className="flex justify-center mb-5">
             <div className="flex">
               {[1, 2, 3, 4, 5].map((star) => (
@@ -179,12 +216,23 @@ export default function Home() {
             {testimonialsContent.testimonials.map((testimonial, index) => (
               <div key={index} className="testimonial-card">
                 <div className="flex justify-center mb-3">
-                  {/* <Image
-                    src={testimonial.platform.logo || "/placeholder.svg"}
-                    alt={testimonial.platform.name}
-                    width={80}
-                    height={40}
-                  /> */}
+                  <div className="bg-gray-100 rounded-full p-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="text-primary"
+                    >
+                      <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                  </div>
                 </div>
                 <div className="flex justify-center mb-4">
                   {[1, 2, 3, 4, 5].map((star) => (
@@ -254,6 +302,24 @@ export default function Home() {
                     case "Users":
                       IconComponent = Users
                       break
+                    case "Palm":
+                      IconComponent = Palm
+                      break
+                    case "CheckCheck":
+                      IconComponent = CheckCheck
+                      break
+                    case "Binoculars":
+                      IconComponent = Binoculars
+                      break
+                    case "Waves":
+                      IconComponent = Waves
+                      break
+                    case "Lightbulb":
+                      IconComponent = LightbulbIcon
+                      break
+                    case "WaveLine":
+                      IconComponent = WaveLineIcon
+                      break
                     default:
                       IconComponent = Clock
                   }
@@ -306,6 +372,18 @@ export default function Home() {
                     IconContent = <MapPin className="h-6 w-6 text-gray-600" />
                   } else if (feature.icon === "Users") {
                     IconContent = <Users className="h-6 w-6 text-gray-600" />
+                  } else if (feature.icon === "Palm") {
+                    IconContent = <Palm className="h-6 w-6 text-gray-600" />
+                  } else if (feature.icon === "CheckCheck") {
+                    IconContent = <CheckCheck className="h-6 w-6 text-gray-600" />
+                  } else if (feature.icon === "Binoculars") {
+                    IconContent = <Binoculars className="h-6 w-6 text-gray-600" />
+                  } else if (feature.icon === "Waves") {
+                    IconContent = <Waves className="h-6 w-6 text-gray-600" />
+                  } else if (feature.icon === "Lightbulb") {
+                    IconContent = <LightbulbIcon className="h-6 w-6 text-gray-600" />
+                  } else if (feature.icon === "WaveLine") {
+                    IconContent = <WaveLineIcon className="h-6 w-6 text-gray-600" />
                   }
 
                   return (
@@ -366,8 +444,15 @@ export default function Home() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-blue-gradient text-white">
-        <div className="container mx-auto px-4 text-center">
+      <section className="py-20 relative">
+        {/* Background Image */}
+        <div className="absolute inset-0 overflow-hidden">
+          <Image src="/bg-img2.jpg" alt="Ocean background" fill className="object-cover" />
+        </div>
+        {/* Dark Overlay with blue gradient blend */}
+        <div className="absolute inset-0 bg-blue-gradient opacity-60"></div>
+        {/* Content */}
+        <div className="container mx-auto px-4 text-center relative z-10 text-white">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">{ctaContent.heading}</h2>
           <p className="text-lg md:text-xl mb-10 max-w-3xl mx-auto">{ctaContent.subheading}</p>
           <div className="flex flex-col sm:flex-row justify-center gap-6">
@@ -388,4 +473,3 @@ export default function Home() {
     </PageLayout>
   )
 }
-
