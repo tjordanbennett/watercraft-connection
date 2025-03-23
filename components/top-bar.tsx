@@ -8,7 +8,7 @@ export function TopBar() {
   return (
     <div className="bg-black text-white py-3 px-4">
       <div className="container mx-auto">
-        <div className="flex flex-col flex-row justify-between items-center">
+        <div className="flex flex-row justify-between items-center">
           {/* Contact Info */}
           <div className="flex justify-center space-x-6 md:mb-0">
             <CopyToClipboard
@@ -44,4 +44,3 @@ export function TopBar() {
     </div>
   )
 }
-
