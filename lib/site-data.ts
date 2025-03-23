@@ -112,7 +112,7 @@ export const companyInfo = {
   export const testimonialsContent = {
     heading: "Our Customers Love Us",
     subheading:
-      "Read real reviews by our customers telling why they love The Watercraft Connection and why you should choose us for your next ocean adventure experience.",
+      "Read real reviews by our customers telling why they love The Watercraft Connection and why you should choose us for your next ",
   
     testimonials: [
       {
@@ -122,7 +122,7 @@ export const companyInfo = {
         },
         title: "Amazing Jet Ski Experience!",
         text: '"I had an incredible Jet Ski experience—definitely one of my favorites on the water! The instructors are extremely skilled and make you feel safe and comfortable. This is a family-owned business that’s been around for over 30 years, so you’re in good hands."',
-        author: "Arnold Bahati.",
+        author: "Arnold Bahati",
         rating: 5,
       },
       {
@@ -164,51 +164,51 @@ export const companyInfo = {
     images: [
       // Replace these placeholder URLs with your actual image URLs
       {
-        src: "/placeholder.svg?height=800&width=1600", // Replace with actual image path
+        src: "/12.webp", // Replace with actual image path
         alt: "Jet ski adventure on North Shore",
       },
       {
-        src: "/placeholder.svg?height=800&width=1600", // Replace with actual image path
+        src: "/1.webp", // Replace with actual image path
         alt: "Kayaking in crystal clear waters",
       },
       {
-        src: "/placeholder.svg?height=800&width=1600", // Replace with actual image path
+        src: "/2.webp", // Replace with actual image path
         alt: "Family enjoying watercraft adventure",
       },
       {
-        src: "/placeholder.svg?height=800&width=1600", // Replace with actual image path
+        src: "/3.webp", // Replace with actual image path
         alt: "Scenic ocean views from jet ski",
       },
       {
-        src: "/placeholder.svg?height=800&width=1600", // Replace with actual image path
+        src: "/4.webp", // Replace with actual image path
         alt: "Instructor demonstrating jet ski operation",
       },
       {
-        src: "/placeholder.svg?height=800&width=1600", // Replace with actual image path
+        src: "/5.webp", // Replace with actual image path
         alt: "Sunset watercraft tour",
       },
       {
-        src: "/placeholder.svg?height=800&width=1600", // Replace with actual image path
+        src: "/6.webp", // Replace with actual image path
         alt: "Group jet ski adventure",
       },
       {
-        src: "/placeholder.svg?height=800&width=1600", // Replace with actual image path
+        src: "/7.webp", // Replace with actual image path
         alt: "Exploring Oahu's coastline",
       },
       {
-        src: "/placeholder.svg?height=800&width=1600", // Replace with actual image path
+        src: "/8.webp", // Replace with actual image path
         alt: "Watercraft adventure with mountain backdrop",
       },
       {
-        src: "/placeholder.svg?height=800&width=1600", // Replace with actual image path
+        src: "/9.webp", // Replace with actual image path
         alt: "Jet ski splashing through waves",
       },
       {
-        src: "/placeholder.svg?height=800&width=1600", // Replace with actual image path
+        src: "/10.webp", // Replace with actual image path
         alt: "Tandem kayaking experience",
       },
       {
-        src: "/placeholder.svg?height=800&width=1600", // Replace with actual image path
+        src: "/11.webp", // Replace with actual image path
         alt: "Aerial view of jet skis on water",
       },
       // If you have fewer than 12 images, you can remove entries
@@ -232,7 +232,7 @@ export const companyInfo = {
       {
         icon: "ShieldCheck",
         title: "Safe",
-        description: "Expert safety provided by licensed Captains & Watercraft Masters.",
+        description: "Expert safety provided by our friendly instructors.",
       },
       {
         icon: "Anchor",
@@ -353,19 +353,19 @@ export const companyInfo = {
       heading: "Meet Our Watercraft Experts",
       members: [
         {
-          name: "Kai Johnson",
-          title: "Founder & Lead Instructor",
+          name: "Liza Hatzenbuhler",
+          title: "",
           image: "/placeholder.svg?height=256&width=256", // Replace with actual image
         },
         {
-          name: "Leilani Wong",
-          title: "Operations Manager",
-          image: "/placeholder.svg?height=256&width=256", // Replace with actual image
+          name: "Tyler Haines",
+          title: "",
+          image: "/tyler-min.webp", // Replace with actual image
         },
         {
-          name: "Makoa Silva",
-          title: "Senior Instructor",
-          image: "/placeholder.svg?height=256&width=256", // Replace with actual image
+          name: "Chris Karinshak",
+          title: "",
+          image: "/chris-min.webp", // Replace with actual image
         },
       ],
     },

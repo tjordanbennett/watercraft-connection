@@ -50,10 +50,7 @@ export default function BookingPage() {
             <div className="w-full bg-gray-50 rounded-lg p-4 md:p-6 shadow-sm min-h-[600px]">
               {/* Replace this comment with the actual Acuity Scheduling iframe */}
               <div className="w-full h-full flex items-center justify-center border-2 border-dashed border-gray-300 rounded-lg p-8">
-                <div className="text-center">
-                  <h3 className="text-xl font-medium text-gray-500 mb-2">{bookingContent.bookingIframe.heading}</h3>
-                  <p className="text-gray-400">{bookingContent.bookingIframe.description}</p>
-                </div>
+                <iframe src="https://app.acuityscheduling.com/schedule.php?owner=34861224&ref=embedded_csp" title="Schedule Appointment" width="100%" height="800" frameBorder="0"></iframe>
               </div>
             </div>
           </div>
