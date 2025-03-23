@@ -240,7 +240,7 @@ export const companyInfo = {
         description: "Experience stunning views. Bring your camera or rent a waterproof bag.",
       },
       {
-        icon: "Users",
+        icon: "CheckCheck",
         title: "Beginner Friendly",
         description: "All you need is an adventurous spirit. We'll handle the rest!",
       },
