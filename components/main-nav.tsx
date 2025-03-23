@@ -16,7 +16,7 @@ export function MainNav() {
   }, [])
 
   return (
-    <header className="bg-blue-gradient text-white py-3.5">
+    <header className="bg-blue-gradient text-white py-3.5 relative z-20">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           {/* Logo - always visible */}
@@ -47,7 +47,7 @@ export function MainNav() {
 
             {/* Mobile Menu Button */}
             <button
-              className="md:hidden text-white focus:outline-none"
+              className="md:hidden text-white focus:outline-none relative z-30"
               onClick={toggleMenu}
               aria-label={isMenuOpen ? "Close menu" : "Open menu"}
             >
@@ -55,42 +55,44 @@ export function MainNav() {
             </button>
           </div>
         </div>
+      </div>
 
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4">
-            <nav className="flex flex-col space-y-4">
-              <Link
-                href="/about"
-                className="text-base hover:text-secondary transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                About
-              </Link>
-              <Link
-                href="/faq"
-                className="text-base hover:text-secondary transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                FAQ
-              </Link>
-              <Link
-                href="/contact"
-                className="text-base hover:text-secondary transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contact
-              </Link>
-              <Link
-                href="/booking"
-                className="btn-secondary text-sm w-full text-center"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                BOOK NOW
-              </Link>
-            </nav>
-          </div>
-        )}
+      {/* Mobile Navigation */}
+      <div
+        className={`absolute top-full left-0 right-0 bg-blue-gradient md:hidden z-10 shadow-lg transform transition-all duration-300 ease-in-out ${
+          isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5 pointer-events-none"
+        }`}
+      >
+        <nav className="flex flex-col space-y-4 p-6 container mx-auto">
+          <Link
+            href="/about"
+            className="text-base hover:text-secondary transition-colors"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            About
+          </Link>
+          <Link
+            href="/faq"
+            className="text-base hover:text-secondary transition-colors"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            FAQ
+          </Link>
+          <Link
+            href="/contact"
+            className="text-base hover:text-secondary transition-colors"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Contact
+          </Link>
+          <Link
+            href="/booking"
+            className="btn-secondary text-sm w-full text-center"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            BOOK NOW
+          </Link>
+        </nav>
       </div>
     </header>
   )
