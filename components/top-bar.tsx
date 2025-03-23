@@ -8,9 +8,9 @@ export function TopBar() {
   return (
     <div className="bg-black text-white py-2 px-4">
       <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="flex flex-col flex-row justify-between items-center">
           {/* Contact Info */}
-          <div className="flex justify-center space-x-6 mb-2 md:mb-0">
+          <div className="flex justify-center space-x-6 md:mb-0">
             <CopyToClipboard
               value={companyInfo.contact.phone}
               icon={<Phone className="h-3.5 w-3.5" />}
