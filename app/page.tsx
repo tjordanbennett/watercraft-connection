@@ -146,12 +146,12 @@ export default function Home() {
                     })}
                   </ul>
                   <div className="flex gap-4">
-                    <a
+                    {/* <a
                       href={service.learnMoreLink}
                       className="flex-1 text-center py-2.5 border border-primary text-primary rounded-full text-sm font-medium hover:bg-primary hover:text-white transition-colors"
                     >
                       LEARN MORE
-                    </a>
+                    </a> */}
                     <Link
                       href={service.bookingLink}
                       className="flex-1 text-center py-2.5 bg-secondary text-black rounded-full text-sm font-medium hover:bg-secondary/90 transition-colors"
